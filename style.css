@@ -1,0 +1,80 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/static/inter-regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/static/Inter-SemiBold.ttf') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/static/Inter-Bold.ttf') format('woff2');
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--Grey-900);
+  color: var(--White);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+    background-color: var(--Grey-700);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 15px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-header_image {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
+.attribution { font-size: 14px; text-align: center; margin-top: 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 0;
+}

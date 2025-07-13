@@ -26,6 +26,9 @@
   font-weight: 700;
   src: url('/assets/fonts/static/Inter-Bold.ttf') format('woff2');
 }
+html{
+  font-size: 16px;
+}
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--Grey-900);
@@ -40,15 +43,33 @@ body {
 }
 
 .container {
-    background-color: var(--Grey-700);
+    background-color: var(--Grey-800);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90vw;
-    margin: 15px;
+    width: 83vw; /* mobile first - wider on small screens */
+    margin: 30px auto; /* auto centers it */
     height: auto;
     border-radius: 15px;
+    padding: 10px;
+}
+
+/* tablet view */
+@media (min-width: 768px) {
+    .container {
+        max-width: 330px;
+    }
+}
+
+/* desktop view */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 360px;
+    }
+    .content-links{
+        width: 43%;
+    }
 }
 
 .content-header {
@@ -62,10 +83,69 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 100%;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 
+.content-header_name {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--White);
+    font-family: var();
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
 
+.content-header_location {
+    font-size: 0.9rem;
+    color: var(--Green);
+    margin-top: 5px;
+    margin-bottom: 18px;
+    font-weight: 700;
+
+}
+
+.content-header_bio {
+    font-size: 0.9rem;
+    color: var(--White);
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.content-links{
+  margin-bottom: 20px;
+}
+
+.content-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-links li {
+    background-color: var(--Grey-700);
+    width: 169%;
+    height: 18px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.9rem;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--White);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+
+}
+
+.content-links li:hover {
+    background-color: var(--Green);
+    color: var(--Grey-700);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 
 .attribution { font-size: 14px; text-align: center; margin-top: 0; }

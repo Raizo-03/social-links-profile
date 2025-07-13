@@ -21,10 +21,12 @@ This is a solution to the [Social Links Profile challenge on Frontend Mentor](ht
 ### Screenshot
 
 #### 📱 Mobile View  
-<img width="479" height="867" alt="Mobile View" src="https://github.com/user-attachments/assets/13757020-8d35-42d4-b65a-167f033434a6" />
+<img width="367" height="750" alt="image" src="https://github.com/user-attachments/assets/2ec4cce4-70c8-4623-9eb4-d37d1885bf1e" />
+
 
 #### 💻 Desktop View  
-<img width="1837" height="914" alt="Desktop View" src="https://github.com/user-attachments/assets/5e87f406-5c6c-4324-a6b9-c6caba7958c9" />
+<img width="1875" height="945" alt="image" src="https://github.com/user-attachments/assets/581ced28-40f7-4dc3-82a2-502c194a4ba8" />
+
 
 ### Links
 
